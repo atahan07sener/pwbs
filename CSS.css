@@ -1,0 +1,173 @@
+
+body{
+	margin:0;
+	padding:0;
+	color: #666;	/*color de las letras del cuerpo*/
+	background: rgba(50,50,71,0.15); /*color del fondo de la pag*/
+	padding-top:90px; /*distancia a la que empieza la pagina del cuerpo (recuadro blanco)*/
+	
+	text-align:left;
+}
+
+table#tab1{
+	border-spacing:5px;
+	background-color: #f1f1c1;
+	width:100%;
+}
+table, th, td{
+	
+	/*border-collapse: collapse;*/
+	
+}
+th, td{
+	padding:15px;
+	border:1px solid black;
+	/*border-bottom:1px solid black;*/
+}
+th{
+	text-align: center;
+	
+}
+tr:hover{
+	background-color:#f5f5f5; /*el color de la tabla cuando pasa el raton*/
+}
+
+td{
+	border-collapse: collapse;
+}
+
+h1{
+	text-align:center;
+	font-size:5vw;
+	font-family: sans-serif;
+}
+h2{
+	font-family: sans-serif;
+	text-align:center;
+	color:black;
+	font-size:1.5vw;
+	background-color:rgba(255, 165, 0,0.5);
+}
+h3{
+	font-size: 3vw;
+	font-family: sans-serif;
+	color:black;
+	border:2px solid rgb(60, 179, 113);
+	text-align:center;
+}
+h4{
+	font-family: sans-serif;
+	color:black;
+}
+/*header{
+	/* background-color: blue;
+	text-align:center;
+	font-size:5vw;
+	font-family: sans-serif;
+}*/
+
+
+#main-header{
+	background: #666; /*color de la cabecera*/
+	color:white; 
+	height: 90px; /*tamaño del recuadro de la cabecera*/
+	
+	width:100%; /*la cabecera ocupa el ancho de la pagina por completo*/
+	left:0%; /*posicion de la cabez al lado izq*/
+	top:0%; /*pos al lado drcho*/
+	position:fixed; /*fija la cabecera*/
+}
+#main-header a{
+	color:black; /*color de las letras cabecera*/
+}
+
+
+
+#logo-header{
+	float:left;
+	padding: 20px 0 0 20px; /* 15 distancia desde arriba, 20 distancia desde dcha */
+	text-decoration:none; /*quita la decoracion de las letras (subrayado)*/
+	font-family:sans-serif;	/*cambia el estilo de letra*/
+	font-size: 2em; /*tamaño de la letra de cabecra*/
+}
+
+#logo-header .site.name{
+	display:block;
+	font-weight:700;
+}
+
+
+nav{ /*opciones de menu*/
+	float:right; /*empieza desde la derecha*/
+}
+nav ul{
+	margin:0; /*margen con respecto a la cabezera*/
+	padding:50;
+	list-style:none; 
+	padding-right: 10px; /*distancia desde la dcha*/
+}
+
+nav ul li {
+	display: inline-block;/*se ponen en linea*/
+	line-height:90px; /*distancia desde top*/
+	font-family:sans-serif;
+}
+
+nav ul li a{
+	display: block;
+	padding: 0 10px;
+	text-decoration:none; /*quita la decortacion, los puntos y el subrayado*/
+}
+
+
+#main-content{
+	background: white; /*fondo del recuadro*/
+	width: 95%; /*porcentaje que ocupa*/
+	max-width: 800px; /*tamaño*/
+	margin: 20px auto; /*margen respecto del top*/
+	box-shadow: 0 0 10px rgba(50,50,71,0.5); /*sobra del recuadro*/
+}
+#main-content header,
+#main-content .content{
+	padding: 90px; /*tamaño */
+	font-family:sans-serif;
+}
+
+
+
+#main-footer{
+	font-family:sans-serif;
+	background:#666;
+	color:black;
+	text-align:center;
+	padding:15px; /*ancho*/
+	margin-top:10px; /*margen con el top*/
+}
+
+form{
+	margin:50px;
+}
+
+button {
+  border-radius: 0;
+}
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+
+
+
+
+
+
+
+
+
