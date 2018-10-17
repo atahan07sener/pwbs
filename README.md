@@ -8,7 +8,7 @@ Usage of CSS3 selectors:
 - [x] Classes (.)
 - [x] Ancestors (space)
 - [ ] Children (>)
-- [ ] All elements (\*)
+- [x] All elements (\*)
 - [x] And (,)
 - [ ] Successors (+)
 - [ ] Predessecors (~)
