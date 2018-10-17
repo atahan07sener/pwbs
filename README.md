@@ -9,7 +9,7 @@ Usage of CSS3 selectors:
 - [x] Ancestors (space)
 - [ ] Children (>)
 - [ ] All elements (\*)
-- [x] And (,)
+- [ ] And (,)
 - [ ] Successors (+)
 - [ ] Predessecors (~)
 - [ ] Attributes matching - at least 3 examples ([])
