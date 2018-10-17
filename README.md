@@ -1,6 +1,6 @@
 - [x] Various methods of placing CSS stylesheets on page
-- [ ] Various text size transformation (px, pt, %)
-- [ ] Various (at least 3) methods of styling, positioning, coloring of background
+- [x] Various text size transformation (px, pt, %)   ('vw' and 'em' is another kind of text size transformation, we already have it)
+- [ ] Various (at least 3) methods of styling, positioning, coloring of background 
 
 Usage of CSS3 selectors:
 
@@ -18,13 +18,13 @@ Usage of CSS3 selectors:
 
 - [ ] Usage of box-model attributes: margin, padding, width, height, position, float, clear (detailed positioning of elements will be on next lab)
 - [ ] 3 different borders, 1 rounded on any object
-Tables styling:
 
+Tables styling:
 - [ ]  Coloring odd and even rows
-- [ ]    Header coloring
-- [ ]    Text aligning
-- [ ]    Responsiveness
-- [ ]    Borders
+- [x]    Header coloring
+- [x]    Text aligning
+- [x]    Responsiveness
+- [x]    Borders
 
 - [ ] Display and visibility examples
 - [ ] Opacity of images, and changes on hover

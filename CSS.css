@@ -9,18 +9,22 @@ body{
 	text-align:left;
 }
 
+*{
+	font-family:sans-serif;	/*cambia el estilo de letra*/
+}
+
 table#tab1{
 	border-spacing:5px;
 	background-color: #f1f1c1;
 	width:100%;
 }
 table, th, td{
-	
-	/*border-collapse: collapse;*/
+	border: 1px solid black;
+	border-collapse: collapse;
 	
 }
 th, td{
-	padding:15px;
+	padding:15px; /*distancia entre el borde y el contenido*/
 	border:1px solid black;
 	/*border-bottom:1px solid black;*/
 }
@@ -31,6 +35,12 @@ th{
 tr:hover{
 	background-color:#f5f5f5; /*el color de la tabla cuando pasa el raton*/
 }
+#com, #id1, #id2, #id3{
+	background-color:rgb(135, 99, 71);
+	color:black;
+}
+
+
 
 td{
 	border-collapse: collapse;
@@ -39,32 +49,24 @@ td{
 h1{
 	text-align:center;
 	font-size:5vw;
-	font-family: sans-serif;
+	font-size: 290%; /*THIS IS ANOTHER KIND OF TEXT SIZE TRANSFORMATION*/
 }
 h2{
-	font-family: sans-serif;
 	text-align:center;
 	color:black;
 	font-size:1.5vw;
 	background-color:rgba(255, 165, 0,0.5);
 }
 h3{
-	font-size: 3vw;
-	font-family: sans-serif;
+	font-size: 3vw; /*THIS IS ANOTHER KIND OF TEXT SIZE TRANSFORMATION*/
 	color:black;
 	border:2px solid rgb(60, 179, 113);
 	text-align:center;
 }
 h4{
-	font-family: sans-serif;
+	font-size: 13pt;
 	color:black;
 }
-/*header{
-	/* background-color: blue;
-	text-align:center;
-	font-size:5vw;
-	font-family: sans-serif;
-}*/
 
 
 #main-header{
@@ -87,8 +89,8 @@ h4{
 	float:left;
 	padding: 20px 0 0 20px; /* 15 distancia desde arriba, 20 distancia desde dcha */
 	text-decoration:none; /*quita la decoracion de las letras (subrayado)*/
-	font-family:sans-serif;	/*cambia el estilo de letra*/
-	font-size: 2em; /*tamaño de la letra de cabecra*/
+	
+	font-size: 2em; /*THIS IS ANOTHER KIND OF TEXT SIZE TRANSFORMATION*/
 }
 
 #logo-header .site.name{
@@ -130,13 +132,11 @@ nav ul li a{
 #main-content header,
 #main-content .content{
 	padding: 90px; /*tamaño */
-	font-family:sans-serif;
 }
 
 
 
 #main-footer{
-	font-family:sans-serif;
 	background:#666;
 	color:black;
 	text-align:center;
@@ -157,7 +157,6 @@ select,
 optgroup,
 textarea {
   margin: 0;
-  font-family: inherit;
   font-size: inherit;
   line-height: inherit;
 }
