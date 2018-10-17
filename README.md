@@ -1,4 +1,4 @@
-- [ ] Various methods of placing CSS stylesheets on page
+- [x] Various methods of placing CSS stylesheets on page
 - [ ] Various text size transformation (px, pt, %)
 - [ ] Various (at least 3) methods of styling, positioning, coloring of background
 
