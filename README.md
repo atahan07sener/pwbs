@@ -4,12 +4,12 @@
 
 Usage of CSS3 selectors:
 
-- [ ] Identifiers (#)
-- [ ] Classes (.)
-- [ ] Ancestors (space)
+- [x] Identifiers (#)
+- [x] Classes (.)
+- [x] Ancestors (space)
 - [ ] Children (>)
 - [ ] All elements (\*)
-- [ ] And (,)
+- [x] And (,)
 - [ ] Successors (+)
 - [ ] Predessecors (~)
 - [ ] Attributes matching - at least 3 examples ([])
