@@ -27,5 +27,5 @@ Tables styling:
 - [x]    Borders
 
 - [ ] Display and visibility examples
-- [ ] Opacity of images, and changes on hover
+- [x] Opacity of images, and changes on hover
 - [ ] Usage of @media (responsiveness)

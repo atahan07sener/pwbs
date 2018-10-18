@@ -40,7 +40,14 @@ tr:hover{
 	color:black;
 }
 
-
+#opacityImage{
+	opacity: 1;
+	filter: alpha(opacity=50);
+}
+#opacityImage:hover{
+	opacity: 0.7;
+	filter: alpha(opacity=100);
+}
 
 td{
 	border-collapse: collapse;
@@ -146,6 +153,10 @@ nav ul li a{
 
 form{
 	margin:50px;
+	border: 1px solid gray;
+	padding: 10px;
+	background-color:hsl(0, 0%, 90%);
+	border-style:dotted;
 }
 
 button {
