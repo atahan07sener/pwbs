@@ -1,3 +1,11 @@
+## Programming of Web-based Systems
+
+This is a project given in the Programming of Web-based Systems course.
+
+You can reach the website at: http://atahan07sener.github.io/pwbs
+
+## TODO List
+
 - [x] Various methods of placing CSS stylesheets on page
 - [x] Various text size transformation (px, pt, %)   ('vw' and 'em' is another kind of text size transformation, we already have it)
 - [ ] Various (at least 3) methods of styling, positioning, coloring of background 
