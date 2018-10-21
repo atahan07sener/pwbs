@@ -36,4 +36,4 @@ Tables styling:
 
 - [ ] Display and visibility examples
 - [x] Opacity of images, and changes on hover
-- [ ] Usage of @media (responsiveness)
+- [x] Usage of @media (responsiveness)

@@ -148,12 +148,10 @@ nav{
 nav ul{
 	width: 100%;
 	list-style: none;
-	margin: 0 auto;
-
-	
+	margin: 0 auto;	
 }
 
-nav ul li{
+nav ul li {
 	display: inline;
 	border: solid;
 	border-color: #585858;
@@ -184,20 +182,28 @@ nav ul li:hover{
 	display: none;
 }
 
-@media (max-width: 768px)
+.menu {
+	cursor: pointer;
+}
+
+@media (max-width: 937px)
 {
 	.toggle{
 		display: block;
 	}
-	ul {
+	nav ul {
 		width: 100%;
 		padding: 0;
+		display: none;
 	}
 
-	ul li{
+	nav ul li{
 		display: block;
 		text-align: center;
 		float: none;
+	}
+	.active {
+		display: block;
 	}
 }
 
