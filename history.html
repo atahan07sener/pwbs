@@ -1,50 +1,54 @@
 <!DOCTYPE html>
 <html lang="en-Us">
+
+<head>
+	<meta charset="UTF-8"> <!--SIEMPRE-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+	<title>DSP | Digital Signal Processor</title>
 	
-	<head>
-		<meta charset="UTF-8"> <!--SIEMPRE-->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<title>DSP | Digital Signal Processor</title>
+</head>
+
+<body>
+	<header id="main-header"> 
 		
-	</head>
+		<a id="logo-header" href="index.html">
+			<span class="site-name"> Digital Signal Processor</span>
+		</a>
+		
+		<nav>
+			<div class="toggle">
+				<i class="fa fa-bars" aria-hidden="true"></i>
+			</div>
+			<ul>
+				<li><a href="index.html">Introduction</a></li>
+				<li><a href="history.html">History</a></li>
+				<li><a href="family.html">TMS320</a></li>
+				<li><a href="fabs.html">Main producers</a></li>
+				<li><a href="differences.html">Comparsions</a></li>
+				<li><a href="refs.html">References</a></li>
+			</ul>
+		</nav>
+	</header>
 	
-	<body>
-		<header id="main-header"> 
+	<section id="main-content">
+		<article>
 			
-			<a id="logo-header" href="index.html">
-				<span class="site-name"> Digital Signal Processor</span>
-			</a>
-			
-			<nav>
-				<ul>
-					<li><a href="index.html">Introduction</a></li>
-					<li><a href="history.html">History</a></li>
-					<li><a href="family.html">TMS320</a></li>
-					<li><a href="fabs.html">Main producers</a></li>
-					<li><a href="differences.html">Comparsions</a></li>
-					<li><a href="refs.html">References</a></li>
-				</ul>
-			</nav>
-		</header>
-		
-		<section id="main-content">
-			<article>
-				
-				<header>
-					<h1>History</h1>
-				</header>
-				<div class="content">
-					<div>Up to <b>1950’s</b> signal processing done with analog systems using electronic circuits or mechanical devices. Digital computers used to simulate signal processing systems before implementing in analog hardware – cheap way to vary parameters and test system output.</div>
-					<br><div>In <b>1965</b> <i>Cooley and Tukey</i> (re)discover efficient algorithm for Fast Fourier Transforms (FFTs) – made feasible &#39;real-time&#39; signal processing as well as algorithms previously thought impossible to implement on digital computers.</div>
+			<header>
+				<h1>History</h1>
+			</header>
+			<div class="content">
+				<div>Up to <b>1950’s</b> signal processing done with analog systems using electronic circuits or mechanical devices. Digital computers used to simulate signal processing systems before implementing in analog hardware – cheap way to vary parameters and test system output.</div>
+				<br><div>In <b>1965</b> <i>Cooley and Tukey</i> (re)discover efficient algorithm for Fast Fourier Transforms (FFTs) – made feasible &#39;real-time&#39; signal processing as well as algorithms previously thought impossible to implement on digital computers.</div>
 				<br><div>In <b>1980’s</b> IC technology advancements led to very fast fixed-point and floating-point microprocessors for digital signal processing.</div>
-					<br><div><b>2000s</b> – FPGA primarily used for DSP.</div>
-				</div>
-				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/KL_TI_TMS32020.jpg/800px-KL_TI_TMS32020.jpg" alt="TSM" style="width:50%">
-			</article>
-		</section>
-		<footer id="main-footer">
-			<p>Created by: Maria Lucia Pen&#771;a Seva</p>
-		</footer>
-	</body>
+				<br><div><b>2000s</b> – FPGA primarily used for DSP.</div>
+			</div>
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/KL_TI_TMS32020.jpg/800px-KL_TI_TMS32020.jpg" alt="TSM" style="width:50%">
+		</article>
+	</section>
+	<footer id="main-footer">
+		<p>Created by: Maria Lucia Pen&#771;a Seva</p>
+	</footer>
+</body>
 </html>
