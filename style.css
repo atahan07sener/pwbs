@@ -38,10 +38,6 @@ tr:hover{
 	color:black;
 }
 
-#opacityImage{
-	opacity: 1;
-	filter: alpha(opacity=50);
-}
 #opacityImage:hover{
 	opacity: 0.7;
 	filter: alpha(opacity=100);
@@ -81,52 +77,23 @@ h4{
 	width:100%; /*la cabecera ocupa el ancho de la pagina por completo*/
 	left:0%; /*posicion de la cabez al lado izq*/
 	top:0%; /*pos al lado drcho*/
-	position:fixed; /*fija la cabecera*/
+	position: fixed; /*fija la cabecera*/
+	z-index: 1;
 }
 
 #logo-header{
-	float:left;
+	float: left;
 	padding: 20px;
 	text-decoration:none; /*quita la decoracion de las letras (subrayado)*/
 	font-size: 100%; /*THIS IS ANOTHER KIND OF TEXT SIZE TRANSFORMATION*/
 }
 
 #logo-header .site-name{
-	display:block;
-	font-weight: 700;
+	display: block;
+	font-weight: 800;
 	color: whitesmoke;
 	font-size: 100%;
 }
-
-/*
-nav{ 
-	width: 100%;
-}
-nav ul{
-	margin:0 auto; 
-	width: 80%;
-	padding:50;
-	padding-right: 10px; 
-}
-
-nav ul li {
-	display: inline-block;
-	line-height:90px; 
-	font-family:sans-serif;
-	list-style: none;
-}
-
-nav ul li:hover{
-	background-color: #595959;
-}
-
-nav ul li a{
-	display: block;
-	padding: 0 10px;
-	color: #fff;
-	text-decoration:none; 
-}
-*/
 
 #main-content{
 	background: white; /*fondo del recuadro*/
@@ -173,18 +140,20 @@ textarea {
 
 
 nav{
+	z-index: -1;
 	width: 100%;
 	background: #666;
 }
 
-ul{
+nav ul{
 	width: 100%;
 	list-style: none;
 	margin: 0 auto;
+
 	
 }
 
-ul li{
+nav ul li{
 	display: inline;
 	border: solid;
 	border-color: #585858;
@@ -193,14 +162,14 @@ ul li{
 	float: left;
 }
 
-ul li a {
+nav ul li a {
 	color: #fff;
 	text-decoration: none;
 	padding: 20px;
 	display: block;
 }
 
-ul li:hover{
+nav ul li:hover{
 	background-color: #5f5f5f;
 }
 
@@ -222,6 +191,7 @@ ul li:hover{
 	}
 	ul {
 		width: 100%;
+		padding: 0;
 	}
 
 	ul li{
