@@ -1,6 +1,6 @@
 ## Programming of Web-based Systems
 
-This is a project given in the Programming of Web-based Systems course.
+This is an assignment project assigned in the Programming of Web-based Systems course.
 
 You can reach the website at: http://atahan07sener.github.io/pwbs
 
@@ -24,7 +24,7 @@ Usage of CSS3 selectors:
 - [ ] Pseudo-classes - at least 3 examples with at least one "child" example (:) (:first-child) etc.
 - [ ] Combination of these - at least 3
 
-- [ ] Usage of box-model attributes: margin, padding, width, height, position, float, clear (detailed positioning of elements will be on next lab)
+- [x] Usage of box-model attributes: margin, padding, width, height, position, float, clear (detailed positioning of elements will be on next lab)
 - [ ] 3 different borders, 1 rounded on any object
 
 Tables styling:
@@ -34,6 +34,6 @@ Tables styling:
 - [x]    Responsiveness
 - [x]    Borders
 
-- [ ] Display and visibility examples
+- [x] Display and visibility examples
 - [x] Opacity of images, and changes on hover
 - [x] Usage of @media (responsiveness)
