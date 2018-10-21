@@ -11,28 +11,33 @@ body{
 	font-family:sans-serif;	/*cambia el estilo de letra*/
 }
 
-table#tab1{
-	border-spacing:5px;
-	background-color: #f1f1c1;
-	width:100%;
-}
-table, th, td{
+/*************************************
+				T A B L E
+*************************************/
+
+table[id="producerTable"]{
 	border: 1px solid black;
 	border-collapse: collapse;
-	
+	color: black;
 }
 th, td{
-	padding:15px; /*distancia entre el borde y el contenido*/
-	border:1px solid black;
-	/*border-bottom:1px solid black;*/
-}
-th{
+	padding: 10px;
+	border: 1px solid black;
 	text-align: center;
-	
 }
-tr:hover{
-	background-color:#f5f5f5; /*el color de la tabla cuando pasa el raton*/
+
+tbody:hover td[rowspan], tr:hover td{
+   background: brown; 
 }
+
+tbody:nth-child(odd) {
+	background-color:  #CCC;
+}
+
+/*************************************
+				T A B L E  E N D
+*************************************/
+
 #com, #id1, #id2, #id3{
 	background-color:rgb(135, 99, 71);
 	color:black;
@@ -41,10 +46,6 @@ tr:hover{
 #opacityImage:hover{
 	opacity: 0.7;
 	filter: alpha(opacity=100);
-}
-
-td{
-	border-collapse: collapse;
 }
 
 h1{
