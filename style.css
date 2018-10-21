@@ -1,11 +1,9 @@
-
 body{
 	margin:0;
 	padding:0;
 	color: #666;	/*color de las letras del cuerpo*/
 	background: rgba(50,50,71,0.15); /*color del fondo de la pag*/
 	padding-top:90px; /*distancia a la que empieza la pagina del cuerpo (recuadro blanco)*/
-	
 	text-align:left;
 }
 
@@ -79,55 +77,56 @@ h4{
 #main-header{
 	background: #666; /*color de la cabecera*/
 	color:white; 
-	height: 90px; /*tamaño del recuadro de la cabecera*/
 	
 	width:100%; /*la cabecera ocupa el ancho de la pagina por completo*/
 	left:0%; /*posicion de la cabez al lado izq*/
 	top:0%; /*pos al lado drcho*/
 	position:fixed; /*fija la cabecera*/
 }
-#main-header a{
-	color:black; /*color de las letras cabecera*/
-}
-
-
 
 #logo-header{
 	float:left;
-	padding: 20px 0 0 20px; /* 15 distancia desde arriba, 20 distancia desde dcha */
+	padding: 20px;
 	text-decoration:none; /*quita la decoracion de las letras (subrayado)*/
-	
-	font-size: 2em; /*THIS IS ANOTHER KIND OF TEXT SIZE TRANSFORMATION*/
+	font-size: 100%; /*THIS IS ANOTHER KIND OF TEXT SIZE TRANSFORMATION*/
 }
 
-#logo-header .site.name{
+#logo-header .site-name{
 	display:block;
-	font-weight:700;
+	font-weight: 700;
+	color: whitesmoke;
+	font-size: 100%;
 }
 
-
-nav{ /*opciones de menu*/
-	float:right; /*empieza desde la derecha*/
+/*
+nav{ 
+	width: 100%;
 }
 nav ul{
-	margin:0; /*margen con respecto a la cabezera*/
+	margin:0 auto; 
+	width: 80%;
 	padding:50;
-	list-style:none; 
-	padding-right: 10px; /*distancia desde la dcha*/
+	padding-right: 10px; 
 }
 
 nav ul li {
-	display: inline-block;/*se ponen en linea*/
-	line-height:90px; /*distancia desde top*/
+	display: inline-block;
+	line-height:90px; 
 	font-family:sans-serif;
+	list-style: none;
+}
+
+nav ul li:hover{
+	background-color: #595959;
 }
 
 nav ul li a{
 	display: block;
 	padding: 0 10px;
-	text-decoration:none; /*quita la decortacion, los puntos y el subrayado*/
+	color: #fff;
+	text-decoration:none; 
 }
-
+*/
 
 #main-content{
 	background: white; /*fondo del recuadro*/
@@ -160,24 +159,75 @@ form{
 }
 
 button {
-  border-radius: 0;
+	border-radius: 0;
 }
 input,
 button,
 select,
 optgroup,
 textarea {
-  margin: 0;
-  font-size: inherit;
-  line-height: inherit;
+	margin: 0;
+	font-size: inherit;
+	line-height: inherit;
 }
 
 
+nav{
+	width: 100%;
+	background: #666;
+}
 
+ul{
+	width: 100%;
+	list-style: none;
+	margin: 0 auto;
+	
+}
 
+ul li{
+	display: inline;
+	border: solid;
+	border-color: #585858;
+	border-width: 0px 1px 0px 0px;
+	margin: 0px;
+	float: left;
+}
 
+ul li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 20px;
+	display: block;
+}
 
+ul li:hover{
+	background-color: #5f5f5f;
+}
 
+.toggle {
+	width: 100%;
+	padding: 10px 20px;
+	background: #666;
+	text-align: right;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 30px;
+	display: none;
+}
 
+@media (max-width: 768px)
+{
+	.toggle{
+		display: block;
+	}
+	ul {
+		width: 100%;
+	}
 
+	ul li{
+		display: block;
+		text-align: center;
+		float: none;
+	}
+}
 
