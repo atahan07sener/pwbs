@@ -28,7 +28,7 @@ Usage of CSS3 selectors:
 - [ ] 3 different borders, 1 rounded on any object
 
 Tables styling:
-- [ ]  Coloring odd and even rows
+- [x]  Coloring odd and even rows
 - [x]    Header coloring
 - [x]    Text aligning
 - [x]    Responsiveness
