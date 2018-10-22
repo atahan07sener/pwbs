@@ -28,11 +28,11 @@ th, td{
 	text-align: center;
 }
 
-tbody:hover td[rowspan], tr:hover td{
+tbody:hover td[rowspan], tr:hover td{  /* color al pasar el raton por la tabla */
    background: brown; 
 }
 
-thead ~ tbody:nth-child(odd) {
+thead ~ tbody:nth-child(odd) {  /* color de las celdas */
 	background-color:  #CCC;
 }
 
@@ -45,12 +45,12 @@ thead ~ tbody:nth-child(odd) {
 	color:black;
 }
 
-img[id="opacityImage"]:hover{
+img[id="opacityImage"]:hover{ /*opacidad de la img*/
 	opacity: 0.7;
 	filter: alpha(opacity=100);
 }
 
-.border {
+.border {  /*los bordes de la imagen con opacidad*/
 	border-radius: 200px;
 }
 
@@ -182,11 +182,11 @@ nav ul li > a {
 	display: block;
 }
 
-nav ul li:hover{
+nav ul li:hover{ /*color al pasar el raton por la cabecera*/
 	background-color: #5f5f5f;
 }
 
-.toggle {
+.toggle {	/* datos de la cabezera (menu) */
 	width: 100%;
 	padding: 10px 20px;
 	background: #666;
