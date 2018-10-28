@@ -36,6 +36,8 @@ thead ~ tbody:nth-child(odd) {  /* color de las celdas */
 	background-color:  #CCC;
 }
 
+
+
 /*************************************
 				T A B L E  E N D
 *************************************/
@@ -72,6 +74,7 @@ img[id="opacityImage"]:hover{ /*opacidad de la img*/
 h1{
 	text-align: center;
 	font-size: 290%; /*THIS IS ANOTHER KIND OF TEXT SIZE TRANSFORMATION*/
+	text-shadow: 3px 2px black;
 }
 h2{
 	text-align:center;
@@ -91,8 +94,15 @@ h4{
 }
 
 
+
+#references{
+	border: 1px solid;
+	padding:40px;
+	box-shadow: 5px 8px;
+}
+
 #main-header{
-	background: #666; /*color de la cabecera*/
+	background: linear-gradient(to bottom right, #666, black); /*color de la cabecera*/
 	color:white; 
 	
 	width:100%; /*la cabecera ocupa el ancho de la pagina por completo*/
@@ -122,6 +132,24 @@ h4{
 	margin: 20px auto; /*margen respecto del top*/
 	box-shadow: 0 0 10px rgba(50,50,71,0.5); /*sobra del recuadro*/
 	padding: 10px 20px 20px;
+}
+
+#main-content .multiColum{
+	-webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+	
+	
+	-webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+	
+}
+
+#imageBorder{
+	border: 10px solid transparent;
+	padding: 10px;
+	border-image: url(borderImage.png) 100% round;
 }
 
 section + footer{
@@ -222,3 +250,25 @@ nav ul li:hover{ /*color al pasar el raton por la cabecera*/
 	}
 }
 
+#transition1{
+	width: 20px;
+	height: 20px;
+	background: black;
+	-webkit-transition: width 0.5s;
+	transition: width 1s linear 2s;
+}
+
+#transition1:hover{
+	width: 300px;
+}
+
+
+@font-face {
+    font-family: Font;
+    src: url(Montserrat-Regular.ttf);
+}
+
+h6{
+	color: hsla(10, 50%, 20%, 0.6);
+	font-family: Font;
+}
