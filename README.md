@@ -40,6 +40,8 @@ Tables styling:
 - [x] Opacity of images, and changes on hover
 - [x] Usage of @media (responsiveness)
 
+---
+
 ### 4th Assignment
 
 - [ ] Usage of proper CSS3 selectors when needed
