@@ -6,6 +6,8 @@ You can reach the website at: http://atahan07sener.github.io/pwbs
 
 ## TODO List
 
+### 3rd Assignment
+
 - [x] Various methods of placing CSS stylesheets on page
 - [x] Various text size transformation (px, pt, %)   ('vw' and 'em' is another kind of text size transformation, we already have it)
 - [x] Various (at least 3) methods of styling, positioning, coloring of background 
@@ -37,3 +39,29 @@ Tables styling:
 - [x] Display and visibility examples
 - [x] Opacity of images, and changes on hover
 - [x] Usage of @media (responsiveness)
+
+### 4th Assignment
+
+- [ ] Usage of proper CSS3 selectors when needed
+Showing at least 75% of various styling:
+
+- [ ] Shadow on texts and blocks
+- [ ] Rounded borders
+- [ ] Color manipulation with RGBA and HSLA
+- [ ] Linear and radial gradients
+- [ ] Borders which are images
+- [ ] Transitions
+- [ ] Transformations
+- [ ] Font-faces (use google public fonts)
+- [ ] Multi column layout with responsiveness
+
+- [ ] Absolute positioning of elements inside other elements
+- [ ] Layout of page based on blocks with correct floating/clearing
+- [ ] Dropdown menu
+- [ ] Usage of bootstrap or other HTML/CSS framework with:
+
+    - [ ] Responsive layout blocks (at least 3-column layout)
+    - [ ] Usage of 5 or more components/utilities (i.e. in Bootstrap: Badges, Dropdowns, Jumbotrons, List group, Navs) (without Javascript)
+    - [ ] Styling of tables with header, body and footer
+    - [ ] Styling of form with 5 different inputs
+    - [ ] Bootstrap shouldn't be included in previous excercises
