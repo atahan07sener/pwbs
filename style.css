@@ -258,9 +258,25 @@ nav ul li:hover{ /*color al pasar el raton por la cabecera*/
 	transition: width 1s linear 2s;
 }
 
+
 #transition1:hover{
 	width: 300px;
 }
+/*
+ article img {
+	transition: width 2s, height 2s, transform 2s;
+}
+ article img:hover {
+	width: 300px, height: 300px, transform: rotate(180deg)
+}*/
+
+/*#main-content .multiColum article img{
+	transition: width 2s, height 2s, transform 2s;
+}
+#main-content .multiColum article img{
+	width: 300px, height: 300px, transform: rotate(180deg);
+}*/
+
 
 
 @font-face {
@@ -271,4 +287,20 @@ nav ul li:hover{ /*color al pasar el raton por la cabecera*/
 h6{
 	color: hsla(10, 50%, 20%, 0.6);
 	font-family: Font;
+}
+
+.content{
+	position: relative;
+}
+.bottomLeft{
+	position: absolute;
+	bottom:9px;
+	left: 16px;
+	font-size:18px;
+	
+}
+
+input[type=text]{
+	background-color: #3CBC8D;
+	color: black;
 }
