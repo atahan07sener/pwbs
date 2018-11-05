@@ -149,7 +149,7 @@ h4{
 #imageBorder{
 	border: 10px solid transparent;
 	padding: 10px;
-	border-image: url(borderImage.png) 100% round;
+	border-image: url(borderImage.png) 10% round;
 }
 
 section + footer{
