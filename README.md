@@ -6,64 +6,20 @@ You can reach the website at: http://atahan07sener.github.io/pwbs
 
 ## TODO List
 
-### 3rd Assignment
+### 5th Assignment
 
-- [x] Various methods of placing CSS stylesheets on page
-- [x] Various text size transformation (px, pt, %)   ('vw' and 'em' is another kind of text size transformation, we already have it)
-- [x] Various (at least 3) methods of styling, positioning, coloring of background 
+- [ ] External javascript embedding
+- [ ] Changing HTML on the website (innerHTML)
+- [ ] Outputting into console
+5 functions showing knowledge of Javascript syntax with at least: loops, conditional statements, arrays, Strings, modifying HTML, samples:
 
-Usage of CSS3 selectors:
+- - [ ] Input: array of Strings, output: String description: concat Strings on input and change to upper case,
+- - [ ] Input: String className, String newHTML, output: none, description: change HTML in all alements with given class
+- - [ ] Input: String fieldID1, String fieldID2, String fieldID3, Output: none, Description: takes a number from the input field with fieldID1 and fieldID2, and outputs the result of multiplication to fieldID3
+- - [ ] Input: String fieldID, Array of Strings: headers, Output: none, Description: changes the table with fieldID, changing header section texts into the one given in "headers" variable with maximum length defined in global variable
+- - [ ] Input: fieldID, Output: none, Description: prompt a user for a name, than puts this name into element with fieldID.
 
-- [x] Identifiers (#)
-- [x] Classes (.)
-- [x] Ancestors (space)
-- [x] Children (>)
-- [x] All elements (\*)
-- [x] And (,)
-- [x] Successors (+)
-- [x] Predessecors (~)
-- [x] Attributes matching - at least 3 examples ([])
-- [x] Pseudo-classes - at least 3 examples with at least one "child" example (:) (:first-child) etc.
-- [x] Combination of these - at least 3
+- [ ] All functions should be fired when clicking on button or on page load or in other chosen simple events (advanced events on next lab)
+- [ ] All functions should be in one file, only simple JS code can be embedded into HTML (like executing a function)
 
-- [x] Usage of box-model attributes: margin, padding, width, height, position, float, clear (detailed positioning of elements will be on next lab)
-- [x] 3 different borders, 1 rounded on any object
-
-Tables styling:
-- [x]  Coloring odd and even rows
-- [x]    Header coloring
-- [x]    Text aligning
-- [x]    Responsiveness
-- [x]    Borders
-
-- [x] Display and visibility examples
-- [x] Opacity of images, and changes on hover
-- [x] Usage of @media (responsiveness)
-
----
-
-### 4th Assignment
-
-- [ ] Usage of proper CSS3 selectors when needed
-Showing at least 75% of various styling:
-
-- [ ] Shadow on texts and blocks
-- [ ] Rounded borders
-- [ ] Color manipulation with RGBA and HSLA
-- [ ] Linear and radial gradients
-- [ ] Borders which are images
-- [ ] Transitions
-- [ ] Transformations
-- [ ] Font-faces (use google public fonts)
-- [ ] Multi column layout with responsiveness
-
-- [ ] Absolute positioning of elements inside other elements
-- [ ] Layout of page based on blocks with correct floating/clearing
-- [ ] Dropdown menu
-- [ ] Usage of bootstrap or other HTML/CSS framework with:
-
-    - [ ] Responsive layout blocks (at least 3-column layout)
-    - [ ] Usage of 5 or more components/utilities (i.e. in Bootstrap: Badges, Dropdowns, Jumbotrons, List group, Navs) (without Javascript)
-    - [ ] Styling of tables with header, body and footer
-    - [ ] Styling of form with 5 different inputs
-    - [ ] Bootstrap shouldn't be included in previous excercises
+Do not use framework in this lab!
