@@ -10,8 +10,7 @@ You can reach the website at: http://atahan07sener.github.io/pwbs
 
 - [ ] External javascript embedding
 - [ ] Changing HTML on the website (innerHTML)
-- [ ] Outputting into console
-5 functions showing knowledge of Javascript syntax with at least: loops, conditional statements, arrays, Strings, modifying HTML, samples:
+Outputting into console 5 functions showing knowledge of Javascript syntax with at least: loops, conditional statements, arrays, Strings, modifying HTML, samples:
 
 - - [ ] Input: array of Strings, output: String description: concat Strings on input and change to upper case,
 - - [ ] Input: String className, String newHTML, output: none, description: change HTML in all alements with given class
