@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-Us">
+
+<head>
+	<meta charset="UTF-8"> <!--SIEMPRE-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<title>DSP | Digital Signal Processor</title>
+	<script src="myJavaScript.js"></script>
+</head>
+
+<body>
+	<header id="main-header">
+
+		<a id="logo-header" href="index.html">
+			<span class="site-name"> Digital Signal Processor</span>
+		</a>
+
+		<nav>
+			<div class="toggle">
+				<i class="fa fa-bars menu" aria-hidden="true"></i>
+			</div>
+			<ul class="list-group">
+				<li class="list-group-item"><a href="index.html">Introduction</a></li>
+				<li class="list-group-item"><a href="history.html">History</a></li>
+				<li class="list-group-item"><a href="family.html">TMS320</a></li>
+				<li class="list-group-item"><a href="fabs.html">Main producers</a></li>
+				<li class="list-group-item"><a href="differences.html">Comparisons</a></li>
+				<li class="list-group-item"><a href="refs.html">References</a></li>
+				<li class="list-group-item"><a href="Java.html">JavaScript</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section id="main-content">
+		<article>
+			
+			<h3> Function 1: </h3>
+			<form id="fun1">
+				Name of DSP: <input type="text" name="name"><br>
+				Producer: <input type="text" name="prod"><br><br>
+			</form>
+			<button onclick="Function1()"> Click here </button>
+			
+			
+			
+			<h3>Function 2:</h3>
+			<form id="fun2">
+				Class to change: <input id="classN" type="text" name="className"><br>
+				Text to write: <input id="t" type="text" name="text"><br>
+				
+				
+				<p class="class1"> class1 to change</p>
+				<p class="class2"> class2 to change</p>
+				<p class="class3"> class3 to change</p>
+				
+			</form>
+			<button onclick="Function2(classN.value, t.value)"> Click here</button>
+			
+			
+			
+			<h3>Function 3:</h3>
+			<form id="func3">
+				number 1: <input id="n1" type="number"><br>
+				number 2: <input id="n2" type="number"><br> 
+				
+			</form>
+			<button onclick="Function3(n1.value, n2.value)"> Click here</button>
+			<p id="n"></p>
+			
+			
+			
+			
+			<h3>Function 4: </h3>
+			<form id="func4">
+				(table id: tab)
+				<table id="tab">
+					<head>
+						<th>Manufacturers</th>
+						<th>16 bits</th>
+						<th>24 bits</th>
+						<th>32 bits</th>
+					</head>
+					<tbody>
+						<tr>
+							<td> Analog Devices </td>
+							<td> ADSP-2100</td>
+							<td> </td>
+							<td> ADSP-21020</td>
+						</tr>
+						<tr>
+							<td> hitachi</td>
+							<td> SH-DSP</td>
+							<td> DSP561xx</td>
+							<td> DSP568xx</td>
+						</tr>
+					</tbody>
+					
+				</table>
+			</form>
+			id: <input id="table" type="text"><br><br>
+			Text: <input id="text" type="text">
+			<button onclick="Function4(text.value, table.value)"> Change</button><br> 
+			
+			
+			
+			<h3>Function 5:</h3>
+			<button onclick="Function5()"> Click here</button>
+			<p id="b5"> </p>
+			
+			
+			
+		</article>
+	</section>
+	<footer id="main-footer">
+		<p>Created by: Maria Lucia Pen&#771;a Seva, Burak Kaymakci, Atahan Şener</p>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	
+</body>
+</html>
