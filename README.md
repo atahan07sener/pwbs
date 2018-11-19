@@ -23,6 +23,9 @@ You can reach the website at: http://atahan07sener.github.io/pwbs
 - [x] All functions should be fired when clicking on button or on page load or in other chosen simple events (advanced events on next lab)
 - [x] All functions should be in one file, only simple JS code can be embedded into HTML (like executing a function)
 
+#### Do not use framework in this lab!
+
+---
 
 ### 6th Assignment
 
@@ -55,5 +58,3 @@ ample applications you can think of:
 - - [ ] Any calculator: tax calculator, cost for materials, cost for services counted by some formulas etc.
 - - [ ] Simple task manager
 - - [ ] Costs shared between roommates
-
-Do not use framework in this lab!
