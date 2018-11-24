@@ -48,7 +48,7 @@
 
 	<div class="container mt-5">
 		<div class="page-header">
-			<h1>Product Chart</h1>
+			<h1>Tax Calculator</h1>
 		</div>
 		<div class="row mt-4">
 			<div class="col-12">
@@ -58,8 +58,10 @@
 							<th scope="col">#</th>
 							<th scope="col">Product Name</th>
 							<th scope="col">Quantity</th>
-							<th scope="col">Price for Each Product</th>
-							<th scope="col">Total Price</th>
+							<th scope="col">Price for Each</th>
+							<th scope="col">Gross Price</th>
+							<th scope="col">Tax</th>
+							<th scope="col">Net Price</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -69,105 +71,81 @@
 			</div>
 		</div>	
 
-		<div class="jumbotron mt-5">
-			<h3>Functions!</h3>
-			<hr class="my-4">
-			<form>
-				<div class="form-group row">
-					<label for="inputFirstName" class="col-sm-2 col-form-label">Product Name</label>
-					<div class="col-sm-10">
-						<input type="name" class="form-control" id="productName" placeholder="Product Name">
-					</div>
-				</div>
-				<div class="form-group row">
-					<label for="inputLastName" class="col-sm-2 col-form-label">Quantity</label>
-					<div class="col-sm-10">
-						<input type="text" class="form-control" id="quantity" placeholder="Quantity">
-					</div>
-				</div>
-				<div class="form-group row">
-					<label for="inputEmail3" class="col-sm-2 col-form-label">Price</label>
-					<div class="col-sm-10">
-						<input type="text" class="form-control" id="price" placeholder="Price">
-					</div>
-				</div>
-				<div class="form-group row">
-					<div class="col-sm-10 col-md-2">
-						<button type="button" class="btn btn-primary" onclick="addProduct(quantity.value, price.value, productName.value)">Add!</button>
-					</div>
-				</div>
-				<div class="form-group row">
-					<label for="inputEmail3" class="col-sm-2 col-form-label">Row number</label>
-					<div class="col-sm-10">
-						<input type="text" class="form-control" id="rowNumber" placeholder="Enter a row number">
-					</div>
-				</div>
-				<div class="form-group row">
-					<div class="col-sm-10 col-md-2">
-						<button type="button" class="btn btn-primary" onclick="deleteRow(rowNumber.value)">Delete row!</button>
-					</div>
-				</div>
-
-
-
-
-
-				<div class="form-group row">
-					<label for="formControlRange" class="col-sm-2 col-form-label">Age</label>
-					<div class="col-sm-10">
-						
-						<input type="range" class="form-control-range" id="formControlRange">
-					</div>
-				</div>
-				<fieldset class="form-group">
-					<div class="row">
-						<legend class="col-form-label col-sm-2 pt-0">Frequency</legend>
-						<div class="col-sm-10">
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-								<label class="form-check-label" for="gridRadios1">
-									Daily news
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-								<label class="form-check-label" for="gridRadios2">
-									Monthly news
-								</label>
-							</div>
-							<div class="form-check disabled">
-								<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
-								<label class="form-check-label" for="gridRadios3">
-									Yearly news
-								</label>
+		<div class="row">
+			<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+				<div class="jumbotron mt-5">
+					<h3>New Product</h3>
+					<hr class="my-3">
+					<form>
+						<div class="form-group row">
+							<label for="inputProductName" class="col-sm-6 col-form-label">Product Name</label>
+							<div class="col-sm-6">
+								<input type="name" class="form-control" id="productName" placeholder="Product Name">
 							</div>
 						</div>
-					</div>
-				</fieldset>
-				<div class="form-group row">
-					<div class="col-sm-2">Hobbies</div>
-					<div class="col-sm-10">
-						<select class="form-control" id="exampleFormControlSelect1">
-							<option>Computers</option>
-							<option>Electronics</option>
-							<option>Math</option>
-							<option>Robotics</option>
-						</select>
-					</div>
-				</div>
-				<div class="form-group row">
-					<div class="col-sm-2">Terms</div>
-					<div class="col-sm-10">
-						<div class="form-check">
-							<input class="form-check-input" type="checkbox" id="gridCheck1">
-							<label class="form-check-label" for="gridCheck1">
-								I agree terms and conditions.
-							</label>
+						<div class="form-group row">
+							<label for="inputQuantity" class="col-sm-6 col-form-label">Quantity</label>
+							<div class="input-group col-sm-6">
+								<input type="text" class="form-control" id="quantity" placeholder="Qty">
+								<div class="input-group-append">
+									<select class="custom-select input-group" id="qtySelect">
+										<option selected value="0">pcs</option>
+										<option value="1">kg</option>
+										<option value="2">L</option>
+										<option value="3">m</option>
+									</select>
+								</div>
+								
+							</div>
 						</div>
-					</div>
+						<div class="form-group row">
+							<label for="inputPrice" class="col-sm-6 col-form-label">Price</label>
+							<div class="input-group col-sm-6">
+								<div class="input-group-prepend">
+									<span class="input-group-text" id="basic-addon1">$</span>
+								</div>
+								<input type="text" class="form-control" placeholder="Price" aria-label="price" id="price" aria-describedby="basic-addon1">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="inputTaxRate" class="col-sm-6 col-form-label">Tax Rate</label>
+							<div class="input-group col-sm-6">
+								<input type="text" class="form-control" id="taxRate" placeholder="Tax Rate" aria-label="Username" aria-describedby="basic-addon1">
+								<div class="input-group-append">
+									<span class="input-group-text" id="basic-addon1">%</span>
+								</div>
+							</div>
+						</div>
+						<div class="form-group row">
+							<div class="col-sm-12 col-md-12 col-lg-12">
+								<button type="button" class="btn btn-primary" onclick="addProduct(quantity.value, price.value, productName.value, taxRate.value)">Add Product</button>
+							</div>
+						</div>
+					</form>
 				</div>
+			</div>
 
-			</form>
+
+
+			<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+				<div class="jumbotron mt-5">
+					<h3>Delete Product</h3>
+					<hr class="my-3">
+					<form>
+						<div class="form-group row">
+							<label for="inputRowNumber" class="col-sm-6 col-form-label">Row number</label>
+							<div class="col-sm-6">
+								<input type="text" class="form-control" id="rowNumber" placeholder="Row number">
+							</div>
+						</div>
+						<div class="form-group row">
+							<div class="col-sm-10 col-md-2">
+								<button type="button" class="btn btn-primary" onclick="deleteRow(rowNumber.value)">Delete Product</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
 		</div>
 
 	</div>
