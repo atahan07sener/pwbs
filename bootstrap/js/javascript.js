@@ -4,7 +4,8 @@ function addProduct(quantity, price,productName,taxRate){
 
 	var grossPrice = (quantity * price);
 	var netPrice = getNetPrice(grossPrice, taxRate);
-
+	var tax = grossPrice * (taxRate/100);
+	var sTax = tax.toPrecision(4);
 	var sGrossPrice = grossPrice.toPrecision(4);
 	var sNetPrice = netPrice.toPrecision(4);
 	var selectedQtyType = $('#qtySelect option:selected').text();
@@ -22,33 +23,33 @@ function addProduct(quantity, price,productName,taxRate){
 	</tr>";
 	$('#table tbody').append(trow);
 
-	if(!$('#totalGPrice').length){
+	if(!$('#totalNPrice').length){
 
 		$('.row.mt-4').after('<hr>',
 			$('<div>',{
 				class: 'row'
 			}).append(
 			$('<div>',{
-				id: 'totalGPrice',
-				class: 'offset-lg-6 offset-md-4 col-lg-3 col-md-4 col-sm-6 col-12'
-			}).html('Total Gross Price: $<span id=\"gPrice\">'+sGrossPrice+'</span>'),
-			$('<div>',{
 				id: 'totalNPrice',
+				class: 'offset-lg-6 offset-md-4 col-lg-3 col-md-4 col-sm-6 col-12'
+			}).html('Total Net Price: $<span id=\"spanGrossPrice\">'+sNetPrice+'</span>'),
+			$('<div>',{
+				id: 'totalTax',
 				class: 'col-lg-3 col-md-4 col-sm-6 col-12'
-			}).html('Total Net Price: $<span id=\"nPrice\">'+sNetPrice+'</span>'))
+			}).html('Total Tax: $<span id=\"spanTax\">'+sTax+'</span>'))
 			)
 	}else{
-		addTotals(grossPrice, netPrice);
+		addTotals(grossPrice, tax);
 	}
 }
 
-function addTotals(grossPrice, netPrice){
+function addTotals(grossPrice, tax){
 
-	var gPrice = parseFloat($("#gPrice").html());
-	var nPrice = parseFloat($("#nPrice").html());
+	var floatGPrice = parseFloat($("#spanGrossPrice").html());
+	var floatTax = parseFloat($("#spanTax").html());
 
-	$('#gPrice').html((grossPrice + gPrice).toPrecision(4));
-	$('#nPrice').html((netPrice + nPrice).toPrecision(4));
+	$('#spanGrossPrice').html((grossPrice + floatGPrice).toPrecision(4));
+	$('#spanTax').html((tax + floatTax).toPrecision(4));
 }
 
 function addtoTotalGrossPrice(){
