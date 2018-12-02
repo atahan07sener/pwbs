@@ -43,3 +43,9 @@ function Function6(){
     }
     document.getElementById('total').value = tot;
 }
+function Function7(){
+	var step;
+for (step = 0; step < 5; step++) {
+  console.log('Walking east one step');
+}
+}
