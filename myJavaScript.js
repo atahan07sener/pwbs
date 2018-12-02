@@ -41,6 +41,9 @@ function Function6(){
         if(parseInt(arr[i].value))
             tot += parseInt(arr[i].value);
     }
+		for (step = 0; step < 5; step++) {
+		  console.log('Walking east one step');
+		}
     document.getElementById('total').value = tot;
 }
 function Function7(){
