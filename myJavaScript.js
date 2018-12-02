@@ -47,13 +47,13 @@ function Function6(){
     document.getElementById('total').value = tot;
 }
 function Function7(){
-	var step;
-for (step = 0; step < 5; step++) {
-  document.getElementById('total').value = step*2;
-}
-if step== 10{
-	console.log()
-}
+	var text = "";
+	var i;
+	for (i = 0; i < 5; i++) {
+	    text += "The number is " + i + "<br>";
+	}
+	document.getElementById("demo").innerHTML = text;
+
 }
 
 
