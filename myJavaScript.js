@@ -22,7 +22,7 @@ function Function3(n1, n2){
 function Function4(text, id){
 	var header = text.split(" ");
 	var ch = document.getElementById(id).getElementsByTagName("th");
-	
+
 	for(i=0; i<ch.length;i++){
 		ch[i].innerHTML=header[i];
 	}
@@ -32,4 +32,23 @@ function Function5(){
 	var prom = prompt("Enter DSP:","");
 	document.getElementById("b5").innerHTML=prom;
 	console.log(name);
+}
+
+var howmanytoadd = 2;
+var rows;
+
+function calc() {
+		var tot = 0;
+		for (var i = 0; i < rows.length; i++) {
+				var linetot = 0;
+				rows[i].getElementsByTagName('input')[howmanytoadd].value = linetot;
+				tot += linetot;
+		}
+		document.getElementById('total').value = tot
+}
+onload = function () {
+		rows = document.getElementById('tab').getElementById('qty1');
+		for (var i = 0; i < rows.length; i++) {
+				rows.getElementsByTagName('input')[i].onkeyup = calc;
+		}
 }
