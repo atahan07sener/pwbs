@@ -34,17 +34,12 @@ function Function5(){
 	console.log(name);
 }
 
-function = Function6() {
-	{
-  var sum = 0;
-  var inputs = document.getElementsByTagName("input");
-  for(i = 0; i <= inputs.length; i++)
-  {
-   if( inputs[i].name == 'qty'+i)
-   {
-     sum += parseInt(input[i].value);
-   }
-  }
-  console.log(sum)
-
+function Function6(){
+    var arr = document.getElementsByName('qty');
+    var tot=0;
+    for(var i=0;i<arr.length;i++){
+        if(parseInt(arr[i].value))
+            tot += parseInt(arr[i].value);
+    }
+    document.getElementById('total').value = tot;
 }
