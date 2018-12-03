@@ -47,9 +47,11 @@ function Function6(){
     document.getElementById('total').value = tot;
 }
 function Function7(){
+	var prom = prompt("Enter DSP:","");
+	document.getElementById("b5").innerHTML=prom;
 	var text = "";
 	var i;
-	for (i = 0; i < 5; i++) {
+	for (i = 0; i < prom; i++) {
 	    text += "The number is " + i + "<br>";
 	}
 	document.getElementById("demo").innerHTML = text;
