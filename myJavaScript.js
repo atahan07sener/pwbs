@@ -76,4 +76,5 @@ function setWeather() {
   } else {
     para.textContent = '';
   }
+		document.getElementById("Text").innerHTML = para.textContent;SSSS
 }
