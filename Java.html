@@ -138,6 +138,40 @@
 				  <option value="overcast">Overcast</option>
 				</select>
 
+
+
+
+				<h3> Hiden </h3>
+				<title>click demo</title>
+ <style>
+ p {
+	 color: red;
+	 margin: 5px;
+	 cursor: pointer;
+ }
+ p:hover {
+	 background: yellow;
+ }
+ </style>
+ <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+<p>First Paragraph</p>
+<p>Second Paragraph</p>
+<p>One more Paragraph</p>
+
+<script>
+$( "p" ).click(function() {
+ $( this ).slideUp();
+});
+</script>
+
+
+
+
+
+
 				<button onclick="setWeather()"> Set Choice </button>
 				<p id = "Text"></p>
 
